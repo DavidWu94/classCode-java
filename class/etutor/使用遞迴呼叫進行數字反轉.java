@@ -1,5 +1,3 @@
-package j.etutor;
-
 import java.util.Scanner;
 
 public class 使用遞迴呼叫進行數字反轉 {
@@ -7,7 +5,7 @@ public class 使用遞迴呼叫進行數字反轉 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         scanner.close();
-        
+
         System.out.println(reverseNumber(n));
     }
 

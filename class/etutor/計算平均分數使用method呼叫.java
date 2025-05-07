@@ -1,5 +1,3 @@
-package j.etutor;
-
 import java.util.Scanner;
 
 public class 計算平均分數使用method呼叫 {
@@ -14,7 +12,8 @@ public class 計算平均分數使用method呼叫 {
 
         while (true) {
             int num = scanner.nextInt();
-            if (num == -1) break;
+            if (num == -1)
+                break;
             if (num >= 0 && num <= 100) {
                 sum += num;
                 count++;

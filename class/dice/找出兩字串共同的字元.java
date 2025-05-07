@@ -1,4 +1,3 @@
-package j.dice;
 import java.util.TreeSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -11,7 +10,7 @@ public class 找出兩字串共同的字元 {
             String input1 = sc.next();
             String input2 = sc.next();
             String ans = findChar(input1, input2);
-            System.out.println(ans != null ? ans : "null");  // 確保輸出為 "null"
+            System.out.println(ans != null ? ans : "null"); // 確保輸出為 "null"
         }
 
         sc.close();
@@ -32,7 +31,7 @@ public class 找出兩字串共同的字元 {
         }
 
         if (ansset.isEmpty()) {
-            return null;  // 如果沒有共同字元，回傳 null
+            return null; // 如果沒有共同字元，回傳 null
         }
 
         // 使用 StringBuilder 將共同字元組合成字串
