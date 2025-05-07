@@ -34,8 +34,10 @@ public class 物件相加多載 {
         } else if (allDouble) {
             double sum = 0;
             for (String s : inputs) {
-                double round = Math.round(Double.parseDouble(s) * 10) / 10.0;
-                sum += round;
+                if (!s.matches("-?\\d+")) { // 非整數才相加
+                    double round = Math.round(Double.parseDouble(s) * 10) / 10.0;
+                    sum += round;
+                }
             }
             double ans = Double.valueOf(String.format("%.1f", sum));
             System.out.println(ans);
